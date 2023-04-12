@@ -1,0 +1,7 @@
+ZAPYTANIE 1 - SELECT `id`, `imie`, `nazwisko`, `rok_urodzenia`, `zdjecie` FROM `osoby` WHERE 1 LIMIT 30;
+
+ZAPYTANIE 2 - SELECT o.imie, o.nazwisko, o.rok_urodzenia, o.opis, o.zdjecie, h.nazwa FROM osoby as o JOIN hobby as h ON h.id = o.Hobby_id WHERE o.id = 10;
+
+ZAPYTANIE 3 - SELECT AVG(rok_urodzenia) as "sredni rok", MIN(rok_urodzenia) as "najmiejszy rok", MAX(rok_urodzenia) as "najwiekszy rok" FROM `osoby` WHERE 1;
+
+ZAPYTANIE 4 - UPDATE `osoby` SET `Hobby_id`=6 WHERE `Hobby_id` = 4;
